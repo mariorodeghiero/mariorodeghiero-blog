@@ -17,6 +17,7 @@ const IndexPage = () => {
               description
               title
             }
+            timeToRead
             fields {
               slug
             }

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
-import Layout from "../components/Layout/layout"
+import Layout from "../components/Layout"
 import Pagination from "../components/Pagination"
 
 const BlogList = props => {

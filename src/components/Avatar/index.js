@@ -6,7 +6,7 @@ import { AvatarWrapper } from "./styled"
 const Avatar = () => {
   const { avatarImage } = useStaticQuery(graphql`
     query {
-      avatarImage: file(relativePath: { eq: "perfil.jpeg" }) {
+      avatarImage: file(relativePath: { eq: "perfil.png" }) {
         childImageSharp {
           fixed(width: 90, height: 90) {
             ...GatsbyImageSharpFixed

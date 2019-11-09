@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     // needs to be the first to work with gatsby-remark-images
     {
       resolve: `gatsby-source-filesystem`,
@@ -77,14 +78,14 @@ module.exports = {
         name: `Mario Rodeghiero`,
         short_name: `Mario Rodeghiero`,
         start_url: `/`,
-        background_color: `var(--background)`,
-        theme_color: `var(--background)`,
+        background_color: `#16202C`,
+        theme_color: `#16202C`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/blog-image.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

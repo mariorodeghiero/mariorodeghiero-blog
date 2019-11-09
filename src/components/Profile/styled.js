@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 import media from "styled-media-query"
+import { Link } from "gatsby"
 
 export const ProfileWrapper = styled.section`
   color: var(--texts);
@@ -12,7 +12,6 @@ export const ProfileLink = styled(Link)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
-
   ${media.lessThan("large")`
     display: flex;
     text-align: left;

@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 import media from "styled-media-query"
+import { Link } from "gatsby"
 
 export const PostItemLink = styled(Link)`
   color: var(--texts);
@@ -38,7 +38,7 @@ export const PostItemTag = styled.div`
   background: ${props =>
     props.background ? props.background : "var(--highlight)"};
   border-radius: 50%;
-  color: var(--postColor);
+  color: #fff;
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;

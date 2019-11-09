@@ -41,3 +41,31 @@ Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst
 #### Sed enim mi
 
 Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
+
+```jsx
+import React from "react"
+import PropTypes from "prop-types"
+import Sidebar from "../Sidebar"
+import MenuBar from "../MenuBar"
+
+import GlobalStyle from "../../styles/global"
+import * as S from "./styled"
+
+const Layout = ({ children }) => {
+  return (
+    <S.LayoutWrapper>
+      <GlobalStyle />
+      <Sidebar />
+      <S.LayoutMain>{children}</S.LayoutMain>
+      <MenuBar />
+    </S.LayoutWrapper>
+  )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
+
+```

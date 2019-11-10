@@ -42,12 +42,12 @@ const MenuBar = () => {
         >
           <Lightbulb />
         </S.MenuBarItem>
-        <S.MenuBarItem title="Select grid or list">
+        {/* <S.MenuBarItem title="Select grid or list">
           <Grid />
-        </S.MenuBarItem>
-        <S.MenuBarItem title="Top">
+        </S.MenuBarItem> */}
+        {/* <S.MenuBarItem title="Top">
           <Arrow />
-        </S.MenuBarItem>
+        </S.MenuBarItem> */}
       </S.MenuBarGroup>
     </S.MenuBarWrapper>
   )

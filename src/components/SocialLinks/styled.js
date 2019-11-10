@@ -11,8 +11,10 @@ export const SocialLinksWrapper = styled.nav`
 
 export const SocialLinksList = styled.ul`
   align-items: center;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-column-gap: 20px;
+  justify-content: center;
   list-style: none;
 `
 
@@ -23,7 +25,7 @@ export const SocialLinksLink = styled.a`
   text-decoration: none;
   transition: color 0.5s;
   &:hover {
-    color: var(--highlight);
+    color: rgba(84, 84, 84, 0.75);
   }
 `
 

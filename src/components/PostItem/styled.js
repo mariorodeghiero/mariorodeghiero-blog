@@ -15,37 +15,26 @@ export const PostItemLink = styled(Link)`
 `
 
 export const PostItemWrapper = styled.section`
-  align-items: center;
   border-bottom: 1px solid var(--borders);
-  display: flex;
   padding: 2rem 3rem;
   width: 100%;
-  body#grid & {
-    border: none;
-    padding: 2rem 1rem;
-    flex-direction: column;
-    justify-content: center;
-  }
-  ${media.lessThan("large")`
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 2rem 1rem;
-  `}
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 `
 
 export const PostItemTag = styled.div`
-  align-items: center;
-  background: ${props =>
-    props.background ? props.background : "var(--highlight)"};
-  border-radius: 50%;
-  color: #fff;
+  align-items: flex-end;
+  /* background: ${props =>
+    props.background ? props.background : "var(--highlight)"}; */
+  border-radius: 3px;
+  color: #222;
   display: flex;
-  font-size: 1.3rem;
-  font-weight: 700;
-  justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
-  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  justify-content: flex-end;
+  margin-top: 30px;
+  height: 40px;
+  text-transform: lowercase;
   ${media.lessThan("large")`
     border-radius: 0;
     font-size: 1rem;

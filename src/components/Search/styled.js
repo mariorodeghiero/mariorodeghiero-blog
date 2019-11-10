@@ -2,9 +2,9 @@ import styled from "styled-components"
 
 export const SearchWrapper = styled.section`
   background: var(--background);
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 100%; */
   transition: opacity 0.4s;
   .ais-InstantSearch__root {
     display: flex;
@@ -14,10 +14,10 @@ export const SearchWrapper = styled.section`
   }
   .ais-SearchBox,
   .ais-Stats {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 0rem;
   }
   .ais-SearchBox {
-    padding-top: 6rem;
+    padding-top: 1rem;
   }
   .ais-Stats {
     color: var(--texts);

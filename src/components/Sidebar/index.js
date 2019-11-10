@@ -7,9 +7,11 @@ import * as S from "./styled"
 
 const Sidebar = () => (
   <S.SidebarWrapper>
-    <Profile />
-    <SocialLinks />
-    <MenuLinks />
+    <S.Box>
+      <Profile />
+      <SocialLinks />
+      <MenuLinks />
+    </S.Box>
   </S.SidebarWrapper>
 )
 

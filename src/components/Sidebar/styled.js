@@ -12,6 +12,9 @@ export const SidebarWrapper = styled.aside`
     height: auto;
     padding: 1rem 2rem;
     width: 100%;
+    height: 100px;
+    background: var(--background);
+    position: fixed;
   `}
 `
 

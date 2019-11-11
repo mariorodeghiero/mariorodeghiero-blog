@@ -4,7 +4,7 @@ const queries = require("./src/utils/algolia_queries")
 
 module.exports = {
   siteMetadata: {
-    title: `Mario Antonio A. Rodeghiero`,
+    title: `Mario Rodeghiero`,
     position: "Front-End Developer",
     description: `Hi, It's me Mário Rodeghiero. Front-End Developer 3 years of experience as a Developer and 10+ years in telecommunications. Designing and creating new things is my passion and I have been working on various open-sorce projects.`,
     author: `@mariorodeghiero`,

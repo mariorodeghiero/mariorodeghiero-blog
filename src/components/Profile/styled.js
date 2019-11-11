@@ -8,12 +8,18 @@ export const ProfileWrapper = styled.section`
   flex-direction: column;
   padding: 24px;
   margin: 30px 0 0 0;
+
+  ${media.lessThan("large")`
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+  `}
 `
 
 export const ProfileLink = styled(Link)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
+
   ${media.lessThan("large")`
     display: flex;
     text-align: left;
@@ -28,7 +34,7 @@ export const ProfileAuthor = styled.h1`
   margin: 1.5rem auto 1.5rem;
   ${media.lessThan("large")`
     font-size: 1.2rem;
-    margin: 0 0 0 10px;
+    margin: 1rem 0 0 1.25rem;
   `}
 `
 

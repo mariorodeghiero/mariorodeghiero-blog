@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const SearchWrapper = styled.section`
   background: var(--background);
@@ -21,6 +22,10 @@ export const SearchWrapper = styled.section`
   }
   .ais-Stats {
     color: var(--texts);
+    ${media.lessThan("large")`
+      text-align: right;
+      padding: 0 1.25rem 0 0;
+  `}
   }
   .ais-SearchBox-input {
     background: none;

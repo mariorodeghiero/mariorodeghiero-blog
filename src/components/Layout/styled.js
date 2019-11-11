@@ -6,7 +6,7 @@ export const LayoutWrapper = styled.section`
   grid-template-columns: 37% 60% 100px;
   background-color: var(--background);
   ${media.lessThan("large")`
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   `}
 `
 
@@ -20,7 +20,8 @@ export const LayoutMain = styled.main`
       "posts"
       "pagination";
   }
+  */
   ${media.lessThan("large")`
-    padding: 4.125rem 0 3rem 0;
-  `} */
+    padding: 5rem 0 3rem 0;
+  `}
 `

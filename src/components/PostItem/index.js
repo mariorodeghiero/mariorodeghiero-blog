@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import * as S from "./styled"
+import moment from "moment"
 
 const PostItem = ({
   title,
@@ -14,10 +15,14 @@ const PostItem = ({
   <S.PostItemLink to={slug}>
     <S.PostItemWrapper>
       <S.PostItemInfo>
-        <S.PostItemDate>{date}</S.PostItemDate>
+        <S.PostItemDate>
+          {moment(date)
+            .local()
+            .format(`MMMM DD, YYYY`)}
+        </S.PostItemDate>
         <S.PostItemTitle>{title}</S.PostItemTitle>
         <S.PostItemDescription>
-          {description} - {timeToRead} min
+          {description} • {timeToRead} min read
         </S.PostItemDescription>
       </S.PostItemInfo>
       <S.PostItemTag background={background}>{category}</S.PostItemTag>

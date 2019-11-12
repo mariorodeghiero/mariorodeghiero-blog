@@ -15,6 +15,7 @@ export const SidebarWrapper = styled.aside`
     height: 100px;
     background: var(--background);
     position: fixed;
+    z-index: 2000;
   `}
 `
 

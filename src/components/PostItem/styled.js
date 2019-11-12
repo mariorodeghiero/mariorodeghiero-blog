@@ -6,6 +6,7 @@ export const PostItemLink = styled(Link)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
+  transition: color 0.5s ease-in-out;
   body#grid & {
     background-color: var(--background);
   }
@@ -27,7 +28,7 @@ export const PostItemTag = styled.div`
   /* background: ${props =>
     props.background ? props.background : "var(--highlight)"}; */
   border-radius: 3px;
-  color: #222;
+  color: var(--texts);
   display: flex;
   font-size: 1rem;
   font-weight: 300;
@@ -35,6 +36,8 @@ export const PostItemTag = styled.div`
   margin-top: 30px;
   height: 40px;
   text-transform: lowercase;
+  transition: color 0.5s ease-in-out;
+
   ${media.lessThan("large")`
     border-radius: 0;
     font-size: 1rem;
@@ -45,6 +48,10 @@ export const PostItemTag = styled.div`
   `}
   body#grid & {
     margin-bottom: 1.5rem;
+  }
+
+  ${PostItemLink}:hover & {
+    color: var(--highlight);
   }
 `
 

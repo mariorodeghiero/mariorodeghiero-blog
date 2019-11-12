@@ -15,7 +15,7 @@ export const ProfileWrapper = styled.section`
   `}
 `
 
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled.div`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
@@ -24,9 +24,6 @@ export const ProfileLink = styled(Link)`
     display: flex;
     text-align: left;
   `}
-  &:hover {
-    color: var(--highlight);
-  }
 `
 
 export const ProfileAuthor = styled.h1`

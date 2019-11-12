@@ -5,7 +5,7 @@ export const SearchWrapper = styled.section`
   background: var(--background);
   /* display: flex; */
   /* flex-direction: column; */
-  /* width: 100%; */
+  width: 100%;
   transition: opacity 0.4s;
   .ais-InstantSearch__root {
     display: flex;
@@ -22,6 +22,8 @@ export const SearchWrapper = styled.section`
   }
   .ais-Stats {
     color: var(--texts);
+    text-align: right;
+    padding: 0 4.75rem 0 0;
     ${media.lessThan("large")`
       text-align: right;
       padding: 0 1.25rem 0 0;
@@ -33,9 +35,11 @@ export const SearchWrapper = styled.section`
     border-bottom: 1px solid var(--borders);
     color: var(--texts);
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
+    font-weight: 300;
     padding: 0.5rem;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     outline: 0;
     &::placeholder {
       color: var(--texts);

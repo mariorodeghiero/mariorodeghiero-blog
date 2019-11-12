@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const LayoutWrapper = styled.section`
   display: grid;
-  grid-template-columns: 37% 60% 100px;
+  grid-template-columns: 37% 63% 100px;
   background-color: var(--background);
   ${media.lessThan("large")`
     grid-template-columns: 100%;

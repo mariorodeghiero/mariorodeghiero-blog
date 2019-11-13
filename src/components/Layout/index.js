@@ -18,8 +18,10 @@ const Layout = ({ children }) => {
     <S.LayoutWrapper>
       <GlobalStyle />
       <MenuBar />
-      <Sidebar />
-      <S.LayoutMain>{children}</S.LayoutMain>
+      <S.Container>
+        <Sidebar />
+        <S.LayoutMain>{children}</S.LayoutMain>
+      </S.Container>
     </S.LayoutWrapper>
   )
 }

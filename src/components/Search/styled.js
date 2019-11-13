@@ -23,7 +23,8 @@ export const SearchWrapper = styled.section`
   .ais-Stats {
     color: var(--texts);
     text-align: right;
-    padding: 0 4.75rem 0 0;
+    font-size: 0.75rem;
+    padding: 0 1.75rem 0 0;
     ${media.lessThan("large")`
       text-align: right;
       padding: 0 1.25rem 0 0;
@@ -38,7 +39,7 @@ export const SearchWrapper = styled.section`
     font-size: 1.25rem;
     font-weight: 300;
     padding: 0.5rem;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     outline: 0;
     &::placeholder {

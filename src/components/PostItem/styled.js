@@ -26,7 +26,7 @@ export const PostItemWrapper = styled.section`
   border: 1px solid var(--borders);
   margin: 0.875rem 0 0.875rem 0;
   border-radius: 3px;
-  width: 65%;
+  width: 100%;
 `
 
 export const PostItemTag = styled.div`

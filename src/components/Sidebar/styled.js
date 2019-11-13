@@ -5,7 +5,7 @@ export const SidebarWrapper = styled.aside`
   align-items: center;
   display: block;
   height: 100vh;
-  padding: 2.5rem 0 0 3.25rem;
+  padding: 2.5rem 0 0 4rem;
   text-align: center;
   ${media.lessThan("large")`
     align-items: flex-start;

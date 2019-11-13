@@ -1,7 +1,9 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-export const LayoutWrapper = styled.section``
+export const LayoutWrapper = styled.section`
+  background: var(--background);
+`
 export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;

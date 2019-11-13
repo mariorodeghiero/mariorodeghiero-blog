@@ -13,6 +13,7 @@ export const PostItemLink = styled(Link)`
   grid-template-areas:
     "info read"
     "info tag"
+    "info tag"
     "info date";
 
   body#grid & {
@@ -40,7 +41,6 @@ export const PostItemWrapper = styled.section`
 `
 
 export const PostItemTag = styled.div`
-  align-items: flex-end;
   justify-content: flex-end;
   /* background: ${props =>
     props.background ? props.background : "var(--highlight)"}; */
@@ -52,6 +52,11 @@ export const PostItemTag = styled.div`
   text-transform: lowercase;
   transition: color 0.5s ease-in-out;
   grid-area: tag;
+  height: 20px;
+  span {
+    line-height: 20px;
+    padding-right: 3px;
+  }
 
   body#grid & {
     margin-bottom: 1.5rem;
@@ -62,7 +67,6 @@ export const PostItemTag = styled.div`
   }
 
   ${media.lessThan("large")`
-    line-height: 1.6rem;
     justify-content: flex-start;
   `}
 `
@@ -106,7 +110,9 @@ export const PostItemDescription = styled.p`
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.2;
-  padding: 1.5rem 0 0 0;
+  display: grid;
+  align-content: flex-end;
+  min-height: 46px;
 `
 
 export const Read = styled.p`

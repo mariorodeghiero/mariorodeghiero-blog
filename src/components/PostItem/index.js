@@ -18,8 +18,10 @@ const PostItem = ({
         <S.PostItemTitle>{title}</S.PostItemTitle>
         <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
-      <S.Read>📖{timeToRead} min read</S.Read>
-      <S.PostItemTag background={background}>{category}</S.PostItemTag>
+      <S.Read>📖 {timeToRead} min read</S.Read>
+      <S.PostItemTag background={background}>
+        <span>🏷 </span> {category}
+      </S.PostItemTag>
       <S.PostItemDate>
         {moment(date)
           .local()

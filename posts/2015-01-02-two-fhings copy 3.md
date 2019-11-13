@@ -1,46 +1,66 @@
 ---
-date: 2015-01-02 05:54:23
-title: Two things are infinite
-description: And I'm not sure about the universe.
-category: react
+date: 2019-10-02 05:54:23
+title: styled-components
+description: css in js with styled-components
+category: css
 background: "#7AAB13"
 ---
-# Lorem ipsum
+<div>
+        <h1 class="title">styled-components</h1>
+        <h4>"css in js with styled-components"</h4>
+        <p>
+          <a class="link" href="https://www.styled-components.com//" target="_blank"
+            >styled-components</a
+          >
+          is a library with more than 2 million downloads that allows us to use css in javascript.
+          Styled-components allows us some features that help us in the development process such as:
+          browser compatibility, individual css for each component, no need to import .css files ...
+          you can check more in
+          <a class="link" href="https://www.styled-components.com//" target="_blank"
+            >styled-components</a
+          >
+          <br />
+          Now let's see how the styled-components work with ReactJS.
+        </p>
+      </div>
+<div>
+        <h2 class="sub-title">Install</h2>
+        <p>
+          In the following examples will be used the "create-react-app" and "styled-components"
+          therefore it is necessary to install them to give continuity.
+        </p>
+        <p><strong>creact-react-app</strong></p>
+        <p class="command-line">$ npx create-react-app my-app</p>
+        <p><strong>styled-components</strong></p>
+        <p class="command-line">$ npm install --save styled-components</p>
+      </div>
 
-Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, [adipiscing](http://google.com) eu pulvinar vel, sodales vitae dui. :thumbsup: :smile: :sparkler:
+```jsx
+  import React, { Component } from 'react';
+          import styled from 'styled-components';
 
-```javascript
-a=3
-puts a
+          const StyleButton = styled.button`
+            background: palevioletred;
+            color: white;
+            font-size: 1em;
+            margin: 1em;
+            padding: 0.25em 1em;
+            border: 2px solid palevioletred;
+            border-radius: 3px;
+          `;
+
+          class Button extends Component {
+            render() {
+            return (
+              &lt;div&gt;
+              &lt;StyleButton&gt;Button&lt;/StyleButton&gt;
+              &lt;/div&gt;
+            )}
+          }
+
+          export default Button;
+
 ```
-
-## Fusce a metus eu
-
-Pellentesque `sed` sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
-
-> Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. Ut vel arcu ac tortor adipiscing hendrerit vel sed massa. Fusce sem libero, lacinia vulputate interdum non, porttitor non quam. Aliquam sed felis ligula. Duis non nulla magna.
-
-Nullam eros mi, mollis in sollicitudin non, tincidunt sed enim. Sed et felis metus, rhoncus ornare nibh. Ut at magna leo. Suspendisse egestas est ac dolor imperdiet pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor, erat sit amet venenatis luctus, augue libero ultrices quam, ut congue nisi risus eu purus. Cras semper consectetur elementum.
-
-### Cras semper consectetur elementum
-
-Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
-
-Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
-
-#### Proin suscipit luctus
-
-Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
-
-- Lorem
-- Ipsum
-- Dolor
-- Sit
-- amet
-
-#### Sed enim mi
-
-Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
 
 ```jsx
 import React from "react"

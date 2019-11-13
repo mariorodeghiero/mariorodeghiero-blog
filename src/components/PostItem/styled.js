@@ -14,12 +14,22 @@ export const PostItemLink = styled(Link)`
     "info read"
     "info tag"
     "info date";
+
   body#grid & {
     background-color: var(--background);
   }
   &:hover {
     color: var(--highlight);
   }
+
+  ${media.lessThan("large")`
+    grid-template-columns: 2fr auto auto;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "info info info"
+    "info info info"
+    "date tag read";
+  `}
 `
 
 export const PostItemWrapper = styled.section`
@@ -43,14 +53,6 @@ export const PostItemTag = styled.div`
   transition: color 0.5s ease-in-out;
   grid-area: tag;
 
-  ${media.lessThan("large")`
-    border-radius: 0;
-    font-size: 1rem;
-    min-height: auto;
-    min-width: auto;
-    padding: .2rem .5rem;
-    margin-bottom: .7rem;
-  `}
   body#grid & {
     margin-bottom: 1.5rem;
   }
@@ -58,6 +60,11 @@ export const PostItemTag = styled.div`
   ${PostItemLink}:hover & {
     color: var(--highlight);
   }
+
+  ${media.lessThan("large")`
+    line-height: 1.6rem;
+    justify-content: flex-start;
+  `}
 `
 
 export const PostItemInfo = styled.div`
@@ -77,12 +84,18 @@ export const PostItemDate = styled.time`
   display: grid;
   align-items: flex-end;
   justify-content: flex-end;
+
+  ${media.lessThan("large")`
+  
+    justify-content: flex-start;
+  `}
 `
 
 export const PostItemTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 500;
   margin: 0.2rem 0 0.5rem;
+
   body#grid & {
     line-height: 1.1;
     margin: 0.8rem 0;
@@ -104,4 +117,11 @@ export const Read = styled.p`
   grid-area: read;
   display: grid;
   justify-content: flex-end;
+
+  ${media.lessThan("large")`
+    padding: 0;
+    line-height: 1.6rem;
+    justify-content: flex-start;
+    /* font-size: 0.6rem; */
+  `}
 `

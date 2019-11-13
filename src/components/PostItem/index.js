@@ -12,22 +12,21 @@ const PostItem = ({
   description,
   timeToRead,
 }) => (
-  <S.PostItemLink to={slug}>
-    <S.PostItemWrapper>
+  <S.PostItemWrapper>
+    <S.PostItemLink to={slug}>
       <S.PostItemInfo>
-        <S.PostItemDate>
-          {moment(date)
-            .local()
-            .format(`MMMM DD, YYYY`)}
-        </S.PostItemDate>
         <S.PostItemTitle>{title}</S.PostItemTitle>
-        <S.PostItemDescription>
-          {description} • {timeToRead} min read
-        </S.PostItemDescription>
+        <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
+      <S.Read>📖{timeToRead} min read</S.Read>
       <S.PostItemTag background={background}>{category}</S.PostItemTag>
-    </S.PostItemWrapper>
-  </S.PostItemLink>
+      <S.PostItemDate>
+        {moment(date)
+          .local()
+          .format(`MMMM DD, YYYY`)}
+      </S.PostItemDate>
+    </S.PostItemLink>
+  </S.PostItemWrapper>
 )
 
 PostItem.propTypes = {

@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Sidebar from "../Sidebar"
 import MenuBar from "../MenuBar"
+import GithubCorner from "react-github-corner"
 
 import GlobalStyle from "../../styles/global"
 import * as S from "./styled"
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
         <Sidebar />
         <S.LayoutMain>{children}</S.LayoutMain>
       </S.Container>
+      <GithubCorner href="https://github.com/mariorodeghiero" />
     </S.LayoutWrapper>
   )
 }

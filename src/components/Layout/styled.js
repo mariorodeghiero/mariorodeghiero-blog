@@ -20,7 +20,7 @@ export const LayoutMain = styled.main`
   display: grid;
   justify-content: center;
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 3rem;
   /* body#grid & {
     grid-template-areas:
       "posts"

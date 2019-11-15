@@ -1,10 +1,11 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import { Link } from "gatsby"
 
 export const ProfileWrapper = styled.section`
   color: var(--texts);
   display: flex;
+  min-width: 400px;
+  min-height: 350px;
   flex-direction: column;
   padding: 24px;
   margin: 30px 0 0 0;
@@ -30,10 +31,12 @@ export const ProfileAuthor = styled.h1`
   font-size: 1.8rem;
   font-weight: 300;
   margin: 1.5rem auto 1.5rem;
+  color: var(--highlight);
+
   ${media.lessThan("large")`
     font-size: 1.2rem;
     margin: 1rem 0 0 1.25rem;
-  `}
+  `};
 `
 
 export const ProfilePosition = styled.small`
@@ -51,6 +54,7 @@ export const ProfileDescription = styled.p`
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.4;
+
   ${media.lessThan("large")`
     display: none;
   `}

@@ -6,6 +6,7 @@ export const PostHeader = styled.header`
   margin: auto;
   width: 100%;
   padding: 5rem 5rem 0;
+  text-align: center;
   ${media.lessThan("large")`
     padding: 3rem 0 0;
     max-width: 100%;
@@ -13,7 +14,7 @@ export const PostHeader = styled.header`
 `
 
 export const PostTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 500;
   padding: 0 1.4rem;
   margin: 1rem auto;
@@ -25,7 +26,7 @@ export const PostTitle = styled.h1`
 `
 
 export const PostDescription = styled.h2`
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 200;
   padding: 0 1.4rem;
   ${media.lessThan("large")`
@@ -36,7 +37,7 @@ export const PostDescription = styled.h2`
 `
 
 export const PostDate = styled.p`
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   font-weight: 100;
   padding: 0 1.4rem;
   ${media.lessThan("large")`
@@ -133,36 +134,36 @@ export const MainContent = styled.section`
   h3,
   h4,
   h5 {
-    font-weight: 800;
+    font-weight: 500;
     letter-spacing: 0.069rem;
     line-height: 1.4;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     ${media.lessThan("large")`
       font-size: 1.875rem;
     `}
   }
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     ${media.lessThan("large")`
       font-size: 1.275rem;
     `}
   }
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     ${media.lessThan("large")`
       font-size: 1.125rem;
     `}
   }
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   strong {
-    font-weight: 700;
+    font-weight: 500;
   }
   .gatsby-resp-image-background-image {
     z-index: 2;
@@ -189,10 +190,13 @@ export const MainContent = styled.section`
     margin: 1rem auto !important;
   }
   a {
-    border-bottom: 1px dashed var(--highlight);
-    color: var(--highlight);
+    background-color: #b3b3b3;
+    color: #000;
+    font-weight: 500;
     text-decoration: none;
     transition: opacity 0.5s;
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
     svg {
       color: var(--postColor);
     }

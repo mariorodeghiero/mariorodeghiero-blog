@@ -17,10 +17,10 @@ export const PostItemLink = styled(Link)`
     "info date";
 
   body#grid & {
-    background-color: var(--background);
+    background-color: var(--background-post);
   }
   &:hover {
-    color: var(--highlight);
+    color: var(--hover);
   }
 
   ${media.lessThan("large")`
@@ -63,7 +63,7 @@ export const PostItemTag = styled.div`
   }
 
   ${PostItemLink}:hover & {
-    color: var(--highlight);
+    color: var(--hover);
   }
 
   ${media.lessThan("large")`

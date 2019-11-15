@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Avatar from "../Avatar"
 import * as S from "./styled"
+import Typed from "react-typed"
 
 const Profile = () => {
   const {
@@ -23,10 +24,7 @@ const Profile = () => {
     <S.ProfileWrapper>
       <S.ProfileLink>
         <Avatar />
-        <S.ProfileAuthor>
-          {title}
-          <S.ProfilePosition>{position}</S.ProfilePosition>
-        </S.ProfileAuthor>
+        <S.ProfileAuthor>@mariorodeghiero</S.ProfileAuthor>
       </S.ProfileLink>
       <S.ProfileDescription>{description}</S.ProfileDescription>
     </S.ProfileWrapper>

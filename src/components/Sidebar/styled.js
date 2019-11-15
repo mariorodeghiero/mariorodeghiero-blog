@@ -24,3 +24,15 @@ export const Box = styled.div`
   position: fixed;
   max-width: 400px;
 `
+
+export const BuiltWith = styled.div`
+  display: grid;
+  grid-template-columns: 32px 32px 32px;
+  grid-column-gap: 28px;
+  justify-content: center;
+`
+
+export const Icon = styled.img`
+  width: 24px;
+  height: 24px;
+`

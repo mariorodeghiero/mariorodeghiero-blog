@@ -6,12 +6,12 @@ const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
     {previous && (
       <S.RecommendedLink to={previous.fields.slug} className="previous">
-        {previous.frontmatter.title}
+        Previous
       </S.RecommendedLink>
     )}
     {next && (
       <S.RecommendedLink to={next.fields.slug} className="next">
-        {next.frontmatter.title}
+        Next
       </S.RecommendedLink>
     )}
   </S.RecommendedWrapper>

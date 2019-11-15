@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 export const MenuBarWrapper = styled.aside`
   align-items: center;
   background: var(--mediumBackground);
-  border-left: 1px solid var(--borders);
+  /* border-right: 1px solid var(--borders); */
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -51,11 +51,12 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.75rem;
+  transition: color 0.5s ease;
   &.light {
     color: #222;
   }
   &:hover {
-    opacity: 0.6;
+    color: var(--hover);
   }
   &.display {
     ${media.lessThan("large")`
@@ -64,7 +65,7 @@ export const MenuBarItem = styled.span`
   }
   ${media.greaterThan("large")`
     &:hover {
-      opacity: 0.6;
+      color: var(--hover);
     }
   `}
   ${media.lessThan("large")`

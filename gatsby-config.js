@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Mario Rodeghiero`,
     position: "Front-End Developer",
-    description: `Hi, It's me Mário Rodeghiero. Front-End Developer 3 years of experience as a Developer and 10+ years in telecommunications. Designing and creating new things is my passion and I have been working on various open-sorce projects.`,
+    description: `Hi, I'm Mario Rodeghiero. Front-End Developer focused in ReactJS working remotely for a Canadian company and I dream to live abroad. Solving problems, creating beautiful and new things is my passion and I have been working on various open-sorce projects.`,
     author: `@mariorodeghiero`,
     siteUrl: `https://mariorodeghiero.com`,
   },

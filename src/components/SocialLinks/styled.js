@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
+import { FadeIn } from "../../utils/styled.js"
 
 export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;
@@ -25,7 +26,7 @@ export const SocialLinksLink = styled.a`
   text-decoration: none;
   transition: color 0.5s;
   &:hover {
-    color: rgba(84, 84, 84, 0.75);
+    color: var(--hover);
   }
 `
 

@@ -27,7 +27,8 @@ export const ProfileLink = styled.div`
 `
 
 export const ProfileAuthor = styled.h1`
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   margin: 1.5rem auto 1.5rem;
   ${media.lessThan("large")`
     font-size: 1.2rem;

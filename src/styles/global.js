@@ -78,9 +78,9 @@ const GlobalStyles = createGlobalStyle`
     --texts: #555555;
     --highlight: #1e2432;
     --mediumBackground: #e2e5ec;
-    --background: #f0f0f3;
+    --background: #ffffff;
     --white: #fff;
-    --black: #222;
+    --black: #111111;
   }
 `
 export default GlobalStyles

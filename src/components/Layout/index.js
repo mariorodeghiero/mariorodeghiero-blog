@@ -23,7 +23,10 @@ const Layout = ({ children }) => {
         <Sidebar />
         <S.LayoutMain>{children}</S.LayoutMain>
       </S.Container>
-      <GithubCorner href="https://github.com/mariorodeghiero" />
+      <GithubCorner
+        href="https://github.com/mariorodeghiero"
+        style={{ position: "fixed", top: 0, right: 0 }}
+      />
     </S.LayoutWrapper>
   )
 }

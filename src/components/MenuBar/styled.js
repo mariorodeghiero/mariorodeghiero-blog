@@ -38,6 +38,9 @@ export const Logo = styled.h3`
   font-size: 1rem;
   margin-left: -0.8rem;
   color: var(--textMenubar);
+  ${media.lessThan("large")`
+    margin-left: 0px;
+  `}
 `
 
 export const MenuBarLink = styled(Link)`

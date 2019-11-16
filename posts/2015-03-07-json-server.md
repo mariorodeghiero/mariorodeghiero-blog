@@ -11,11 +11,14 @@ background: "yellow"
 ## Starting the project
 
 - We created the project using created-react-app</li>
-  > $ npx create-react-app my-app</p>
-> $ cd my-app</p>
+
+> \$ npx create-react-app my-app</p>
+
+> \$ cd my-app</p>
 
 - We installed jSON-Server</li>
-  > \$ npm install -g json-server</p>
+
+> \$ npm install -g json-server</p>
 
 ## Creating the JSON File
 
@@ -37,9 +40,10 @@ Within my-app folder we will create a file named **"db.json"** with the followin
 ```
 
 Then let's run "json-server" and "react-app" by running the command below:
->$ json-server --watch db.json --port 3001</p>
 
->$ npm run start</p>
+> \$ json-server --watch db.json --port 3001</p>
+
+> \$ npm run start</p>
 
 ## Configuring the App.js file
 
@@ -48,12 +52,13 @@ Now that we have our "json-server" running under "localhost:3001/posts" we can d
 <img src="../static/assets/img/screenShot-json-server.png" alt="screen-Shot App.js"/>
 
 ## Result
+
 Now, if we look at the "React App" page, we will have the following result.
 <img src="../static/assets/img/ScreenShot-json-server-1.png" alt="screen-Shot Result"/>
 
 ## Conclusion
 
 By following the steps in this article, you can create an excellent development environment with ReactJS and jSON SERVER for your applications.
-The theme used in the code, I created inspired by "Vue.js" and you can install in "VS_Code", searching for <a class="link" href="https://mariorodeghiero.com/vue-theme/" target="_blank">"Vue Theme"</a>.
+The theme used in the code, I created inspired by "Vue.js" and you can install in "VS_Code", searching for <a href="https://github.com/mariorodeghiero/vue-theme-vscode">"Vue Theme"</a>.
 
 Thanks!!!

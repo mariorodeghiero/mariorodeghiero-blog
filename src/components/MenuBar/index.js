@@ -22,12 +22,13 @@ const MenuBar = () => {
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
         <S.MenuBarLink to="/" title="Home">
-          <S.MenuBarItem>
-            <Home />
+          <S.MenuBarItem active={window.location.pathname === "/"}>
+            {/* <Home /> */}
+            <S.Logo>{"<MR/>"}</S.Logo>
           </S.MenuBarItem>
         </S.MenuBarLink>
         <S.MenuBarLink to="/search/" title="Search">
-          <S.MenuBarItem>
+          <S.MenuBarItem active={window.location.pathname === "/search/"}>
             <Search />
           </S.MenuBarItem>
         </S.MenuBarLink>

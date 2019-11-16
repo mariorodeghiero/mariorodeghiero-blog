@@ -9,7 +9,7 @@ export const PostHeader = styled.header`
   text-align: center;
   ${media.lessThan("large")`
     padding: 3rem 0 0;
-    max-width: 100%;
+    max-width: 90%;
   `}
 `
 
@@ -19,7 +19,7 @@ export const PostTitle = styled.h1`
   padding: 0 1.4rem;
   margin: 1rem auto;
   ${media.lessThan("large")`
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     line-height: 1.1;
     padding: 0 1rem;
   `}
@@ -51,7 +51,7 @@ export const MainContent = styled.section`
   padding: 2rem 5rem;
   ${media.lessThan("large")`
     padding: 2rem 0;
-    max-width: 100%;
+    max-width: 90%;
   `}
   p,
   h1,

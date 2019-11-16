@@ -11,7 +11,7 @@ export const Container = styled.div`
   grid-template-columns: 30% 60%;
   grid-column-gap: 100px;
   ${media.lessThan("large")`
-    grid-template-columns: 100%;
+    display: block;
   `}
 `
 
@@ -23,13 +23,10 @@ export const LayoutMain = styled.main`
   justify-content: center;
   width: 100%;
   padding-top: 3rem;
-  /* body#grid & {
-    grid-template-areas:
-      "posts"
-      "pagination";
-  } */
 
   ${media.lessThan("large")`
+    max-width: 90%;
+    margin: 0 auto;
     padding: 8rem 0 3rem 0;
   `}
 `

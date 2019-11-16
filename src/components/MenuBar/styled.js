@@ -13,7 +13,7 @@ export const MenuBarWrapper = styled.aside`
   padding: 0.8rem 0;
   position: fixed;
   left: 0;
-  width: 3.25rem;
+  width: 3.5rem;
   transition: background 0.5s;
   ${media.lessThan("large")`
     border-top: 1px solid var(--borders);
@@ -34,8 +34,15 @@ export const MenuBarGroup = styled.div`
   `}
 `
 
+export const Logo = styled.h3`
+  font-size: 1rem;
+  margin-left: -0.5rem;
+  letter-spacing: 0.1rem;
+`
+
 export const MenuBarLink = styled(Link)`
   display: block;
+  text-decoration: none;
   &.active {
     span {
       color: var(--highlight);
@@ -52,6 +59,13 @@ export const MenuBarItem = styled.span`
   position: relative;
   width: 3.75rem;
   transition: color 0.5s ease;
+
+  ${({ active }) =>
+    active &&
+    `
+    color: var(--hover);
+  `}
+
   &.light {
     color: #222;
   }
@@ -68,10 +82,12 @@ export const MenuBarItem = styled.span`
       color: var(--hover);
     }
   `}
+
   ${media.lessThan("large")`
     height: 3.2rem;
     padding: .9rem;
     position: relative;
     width: 3.2rem;
+    margin-right: 6px;
   `}
 `

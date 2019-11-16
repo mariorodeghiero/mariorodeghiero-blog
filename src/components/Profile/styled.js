@@ -11,6 +11,7 @@ export const ProfileWrapper = styled.section`
   margin: 30px 0 0 0;
 
   ${media.lessThan("large")`
+    min-width: 100%;
     margin: 0 0 0 0;
     padding: 10px 0 0 0;
   `}
@@ -35,7 +36,7 @@ export const ProfileAuthor = styled.h1`
 
   ${media.lessThan("large")`
     font-size: 1.2rem;
-    margin: 1rem 0 0 1.25rem;
+    margin: 2rem 0 0 1.25rem;
   `};
 `
 

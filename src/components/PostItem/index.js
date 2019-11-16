@@ -16,7 +16,7 @@ const PostItem = ({
     <S.PostItemLink to={slug}>
       <S.PostItemInfo>
         <S.PostItemTitle>{title}</S.PostItemTitle>
-        <S.PostItemDescription>{description}</S.PostItemDescription>
+        <S.PostItemDescription>" {description} "</S.PostItemDescription>
       </S.PostItemInfo>
       <S.Read>📖 {timeToRead} min read</S.Read>
       <S.PostItemTag background={background}>

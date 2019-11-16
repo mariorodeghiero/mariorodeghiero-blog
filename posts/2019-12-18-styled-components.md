@@ -4,6 +4,7 @@ title: styled-components
 description: css in js with styled-components
 category: css
 background: "#7AAB13"
+image: "/assets/img/blog-image.png"
 ---
 
 

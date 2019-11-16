@@ -4,6 +4,7 @@ title: jSON Server with ReactJS
 description: How to use jSON Server with ReactJS
 category: react
 background: "yellow"
+image: "/assets/img/blog-image.png"
 ---
 
 <a class="link" href="https://github.com/typicode/json-server" target="_blank">JSON Server</a> helps you to set up a REST API simply and quickly. As they report in the Github repository, you can create in less than 30 seconds. In this article, we will see how to install and make available a jSON file.</p>

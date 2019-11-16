@@ -27,7 +27,7 @@ export const LayoutMain = styled.main`
   ${media.lessThan("large")`
     display: block;
     max-width: 95%;
-    margin: 0 auto; */
-    /* padding: 8rem 0 3rem 0; */
+    margin: 0 auto;
+    padding: 7.75rem 0 3.2rem 0;
   `}
 `

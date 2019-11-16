@@ -73,6 +73,8 @@ const GlobalStyles = createGlobalStyle`
     --black: #222;
     --background-post: #30354B;
     --hover: #cccccc;
+    --backgroundMenubar: #1C1F2B;
+    --textMenubar: #8899a6;
   }
   body.light {
     --borders: #dedede;
@@ -85,6 +87,8 @@ const GlobalStyles = createGlobalStyle`
     --black: #111111;
     --background-post: #30354B;
     --hover: #222;
+    --backgroundMenubar: #000000;
+    --textMenubar: #e6e6e6;
   }
 `
 export default GlobalStyles

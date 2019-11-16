@@ -119,7 +119,7 @@ export const Read = styled.p`
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.2;
-  padding: 0.4rem 0 1.2rem 0;
+  padding: 0.4rem 0 0.5rem 0;
   grid-area: read;
   display: grid;
   justify-content: flex-end;

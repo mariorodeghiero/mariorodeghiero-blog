@@ -11,7 +11,7 @@ export const Container = styled.div`
   grid-template-columns: 30% 60%;
   grid-column-gap: 100px;
   ${media.lessThan("large")`
-    display: block;
+    display: flex;
   `}
 `
 
@@ -25,8 +25,9 @@ export const LayoutMain = styled.main`
   padding-top: 3rem;
 
   ${media.lessThan("large")`
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 8rem 0 3rem 0;
+    display: block;
+    max-width: 95%;
+    margin: 0 auto; */
+    /* padding: 8rem 0 3rem 0; */
   `}
 `

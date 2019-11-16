@@ -49,12 +49,14 @@ Then let's run "json-server" and "react-app" by running the command below:
 
 Now that we have our "json-server" running under "localhost:3001/posts" we can do our consultation. So in the App.js file insert the following code below, where when mounting the component in the react, we perform a query with **"fetch"** and in a sequence we use the **"map"** to return each item.
 
-<img src="../static/assets/img/screenShot-json-server.png" alt="screen-Shot App.js"/>
+![screenshoot](../static/assets/img/screenShot-json-server.png "screen-Shot")
 
 ## Result
 
 Now, if we look at the "React App" page, we will have the following result.
-<img src="../static/assets/img/ScreenShot-json-server-1.png" alt="screen-Shot Result"/>
+
+![screenshoot1](../static/assets/img/ScreenShot-json-server-1.png "screen-Shot 1")
+
 
 ## Conclusion
 

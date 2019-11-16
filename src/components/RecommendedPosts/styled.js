@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 
 export const RecommendedWrapper = styled.section`
   display: flex;
+  max-width: 100%;
+  margin: 0 auto;
 `
 
 export const RecommendedLink = styled(Link)`

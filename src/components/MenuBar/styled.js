@@ -39,7 +39,7 @@ export const Logo = styled.h3`
   margin-left: -0.8rem;
   color: var(--textMenubar);
   ${media.lessThan("large")`
-    margin-left: 0px;
+    margin-top: 3px;
   `}
 `
 
@@ -91,6 +91,6 @@ export const MenuBarItem = styled.span`
     padding: .9rem;
     position: relative;
     width: 3.2rem;
-    margin-right: 6px;
+    margin-left: 24px;
   `}
 `

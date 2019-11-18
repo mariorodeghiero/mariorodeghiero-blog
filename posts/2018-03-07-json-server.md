@@ -2,7 +2,7 @@
 date: 2018-03-07 02:00:23
 title: jSON Server with ReactJS
 description: How to use jSON Server with ReactJS
-category: react
+category: react | pt-br
 background: "yellow"
 image: "/assets/img/blog-image.png"
 ---

@@ -36,7 +36,7 @@ export const MenuBarGroup = styled.div`
 
 export const Logo = styled.h3`
   font-size: 1rem;
-  margin-left: -0.8rem;
+  margin-left: -0.7rem;
   color: var(--textMenubar);
   ${media.lessThan("large")`
     margin-top: 3px;
@@ -62,7 +62,7 @@ export const MenuBarItem = styled.span`
   position: relative;
   width: 3.75rem;
   transition: color 0.5s ease;
-
+  margin-left: -2px;
   ${({ active }) =>
     active &&
     `

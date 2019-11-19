@@ -2,7 +2,7 @@
 date: 2018-05-06 02:00:00
 title: Sass + React.js
 description: Como integrar Sass e React.js
-category: react | pt-br
+category: react
 background: "yellow"
 image: "/assets/img/blog-image.png"
 ---

@@ -32,7 +32,7 @@ const MenuBar = () => {
       </S.MenuBarGroup>
       <S.MenuBarGroup>
         <S.MenuBarItem
-          title="Select Theme"
+          title="Dark | Light"
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? "light" : "dark")
           }}

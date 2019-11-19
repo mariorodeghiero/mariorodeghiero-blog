@@ -1,7 +1,7 @@
 ---
 date: 2018-06-21 01:00:00
-title: HtmlWebpackPlugin Multiples HTML files
-description: Generating multiple HTML files with HtmlWebpackPlugin
+title: HtmlWebpackPlugin
+description: Generating multiple HTML files
 category: webpack
 background: "yellow"
 image: "/assets/img/blog-image.png"

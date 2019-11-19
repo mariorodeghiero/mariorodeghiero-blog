@@ -68,6 +68,8 @@ export const PostItemTag = styled.div`
 
   ${media.lessThan("large")`
     justify-content: flex-start;
+    font-size: 0.875rem;
+    margin-top: 5px;
   `}
 `
 
@@ -90,7 +92,7 @@ export const PostItemDate = styled.time`
   justify-content: flex-end;
 
   ${media.lessThan("large")`
-  
+    font-size: 0.7rem;
     justify-content: flex-start;
   `}
 `
@@ -128,6 +130,6 @@ export const Read = styled.p`
     padding: 0;
     line-height: 1.6rem;
     justify-content: flex-start;
-    /* font-size: 0.6rem; */
+    font-size: 0.875rem;
   `}
 `

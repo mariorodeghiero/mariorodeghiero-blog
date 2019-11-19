@@ -70,7 +70,7 @@ export const MenuBarItem = styled.span`
   `}
 
   &.light {
-    color: #abaa56;
+    color: #ccc920;
   }
   &:hover {
     color: var(--hover);

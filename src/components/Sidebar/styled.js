@@ -12,10 +12,10 @@ export const SidebarWrapper = styled.aside`
     height: auto;
     padding: 1rem 2rem;
     width: 100%;
-    height: 100px;
-    background: var(--background);
+    height: 6rem;
+    background: var(--backgroundMenubar);
     position: fixed;
-    z-index: 2000;
+    z-index: 20;
     border-bottom: 1px solid var(--borders);
   `}
 `

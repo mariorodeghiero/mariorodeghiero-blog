@@ -92,5 +92,8 @@ export const MenuBarItem = styled.span`
     position: relative;
     width: 3.2rem;
     margin-left: 24px;
+    &.light {
+    color: #ccc920;
+  }
   `}
 `

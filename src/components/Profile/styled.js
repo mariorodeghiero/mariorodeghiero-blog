@@ -37,6 +37,8 @@ export const ProfileAuthor = styled.h1`
   ${media.lessThan("large")`
     font-size: 1.2rem;
     margin: 1.75rem 0 0 1.25rem;
+    color: var(--textMenubar);
+
   `};
 `
 

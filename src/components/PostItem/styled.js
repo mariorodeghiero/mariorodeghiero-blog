@@ -38,6 +38,10 @@ export const PostItemWrapper = styled.section`
   margin: 0.875rem 0 0.875rem 0;
   border-radius: 3px;
   width: 100%;
+  max-height: 160px;
+  ${media.lessThan("large")`
+      max-height: 220px;
+  `}
 `
 
 export const PostItemTag = styled.div`
@@ -52,14 +56,10 @@ export const PostItemTag = styled.div`
   text-transform: lowercase;
   transition: color 0.5s ease-in-out;
   grid-area: tag;
-  height: 20px;
+  margin-top: 0.4rem;
   span {
     line-height: 20px;
     padding-right: 3px;
-  }
-
-  body#grid & {
-    margin-bottom: 1.5rem;
   }
 
   ${PostItemLink}:hover & {
@@ -90,10 +90,11 @@ export const PostItemDate = styled.time`
   display: grid;
   align-items: flex-end;
   justify-content: flex-end;
-
+  margin-top: 0.5rem;
   ${media.lessThan("large")`
     font-size: 0.7rem;
     justify-content: flex-start;
+    margin-top: 0;
   `}
 `
 
@@ -111,17 +112,17 @@ export const PostItemTitle = styled.h1`
 export const PostItemDescription = styled.div`
   font-size: 0.875rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2rem;
   display: grid;
   align-content: flex-end;
-  min-height: 46px;
+  min-height: 53px;
 `
 
 export const Read = styled.p`
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.2;
-  padding: 0.4rem 0 0.5rem 0;
+  padding: 0.6rem 0 0.5rem 0;
   grid-area: read;
   display: grid;
   justify-content: flex-end;

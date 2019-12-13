@@ -12,17 +12,21 @@ styled-components is a library with more than 2 million downloads that allow to 
 
 ## Install
 
-In the following examples will be used the "create-react-app" and "styled-components" therefore it is necessary to install them to give continuity.
+In the following examples will be used the "create-react-app" and "styled-components".
 
-**creact-react-app**
+**create-react-app**
 
 > $ npx create-react-app my-app
+
+> $ cd my-app
+
+> $ npm install
 
 **styled-components**
 
 > $ npm install --save styled-components
 
-## Exemplo 1
+## Example 1
 
 In this example we will create a component called "Button.js" an call it in "App.js" to render. I will not go into the merits of how to use a component in "react.js", if you want to learn more about react.js, I have some articles with this steps. Our component will have the following structure:
 

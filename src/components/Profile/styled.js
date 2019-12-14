@@ -15,6 +15,10 @@ export const ProfileWrapper = styled.section`
     margin: 0;
     padding: 0;
   `}
+
+  ${media.greaterThan("huge")`
+    margin: 6rem 0 0 6rem;
+  `}
 `
 
 export const ProfileLink = styled.div`

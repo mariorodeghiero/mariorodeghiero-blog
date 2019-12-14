@@ -8,6 +8,10 @@ export const SocialLinksWrapper = styled.nav`
   ${media.lessThan("large")`
     display: none;
   `}
+
+  ${media.greaterThan("huge")`
+    margin: 6rem 0 0 6rem;
+  `}
 `
 
 export const SocialLinksList = styled.ul`

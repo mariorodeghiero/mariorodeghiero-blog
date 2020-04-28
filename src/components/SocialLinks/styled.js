@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import { FadeIn } from "../../utils/styled.js"
 
 export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;

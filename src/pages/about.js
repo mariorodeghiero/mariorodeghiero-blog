@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const AbautPage = () => (
   <Layout>
     <SEO title="About" />
-    <h1>About Page</h1>
+    <h1>Mário Antônio do Amaral Rodeghiero</h1>
   </Layout>
 )
 

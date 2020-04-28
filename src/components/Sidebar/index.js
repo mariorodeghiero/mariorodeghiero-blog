@@ -12,8 +12,8 @@ const Sidebar = () => (
   <S.SidebarWrapper>
     <S.Box>
       <Profile />
-      <SocialLinks />
       <MenuLinks />
+      <SocialLinks />
 
       {/* <S.BuiltWith>
         <S.Icon src={ReactIcon} alt="ReactJS" />

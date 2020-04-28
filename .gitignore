@@ -67,3 +67,22 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+._.DS_Store
+._.env
+._.gitignore
+._.prettierignore
+._.prettierrc
+._README.md
+._gatsby-browser.js
+._gatsby-config.js
+._gatsby-node.js
+._package.json
+posts/._.DS_Store
+src/images/._gatsby-icon.png
+src/images/._graphql.png
+src/templates/resume.js
+static/assets/img/._.DS_Store
+static/assets/img/._blog-image.png
+static/assets/img/._mountains.jpg
+static/assets/img/._ocean.jpg

@@ -3,6 +3,7 @@ import media from "styled-media-query"
 import { Link } from "gatsby"
 
 export const MenuLinksWrapper = styled.nav`
+  margin-left: 45%;
   ${media.lessThan("large")`
     display: none;
   `}
@@ -14,16 +15,15 @@ export const MenuLinksList = styled.ul`
 `
 
 export const MenuLinksItem = styled.li`
-  padding: 0.5rem 0;
   .active {
-    color: var(--highlight);
-  }
+    visibility: hidden;
+}
 `
 
 export const MenuLinksLink = styled(Link)`
-  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
+  color: var(--highlight);
   &:hover {
     color: var(--highlight);
   }

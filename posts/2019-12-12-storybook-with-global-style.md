@@ -12,7 +12,7 @@ This library has  44k+ stars on GitHub with MIT License.
 
 ## Install
 
-In the following examples will be used the "create-react-app", "styled-components" and "storybook".
+In the following examples the "create-react-app", "styled-components" and "storybook" will be used.
 
 **create-react-app**
 
@@ -36,7 +36,7 @@ In the following examples will be used the "create-react-app", "styled-component
 
 > $ npm run storybook
 
-**Note** If you had some problem to run, try to reinstall. `npm install`
+**Note:** If you had some problem to run it, try to reinstall. `npm install`
 
 ## Global Style
 
@@ -61,11 +61,11 @@ export const GlobalStyle = createGlobalStyle`
 
 ## How to config the loader
 
-Into of the folder **.storybook/**  has a file with the name **config.js**. To apply the global style for all components into your project, you can use this code below.
+In the folder **.storybook/**  has a file with the name **config.js**. To apply the global style for all components into your project, you can use this code below.
 
 **Note:** 
 
-you need to change the name of **require.context( )** depends on the structure.
+you need to change the name of **require.context( )** depending on the structure.
 
 Make sure that you have **react**, **react-dom**, **@babel/core**, and **babel-loader** in your dependencies.
 

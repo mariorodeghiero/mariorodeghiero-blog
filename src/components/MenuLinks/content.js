@@ -4,8 +4,8 @@ const links = [
     // url: "/",
   },
   {
-    // label: "About me",
-    // url: "/about/",
+    label: "read more...",
+    url: "/about/",
   },
 ]
 

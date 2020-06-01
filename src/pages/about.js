@@ -2,12 +2,12 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import Resume from "../templates/resume"
+// import Resume from "../templates/resume"
 
 const AbautPage = () => (
   <Layout>
     <SEO title="About" />
-    <Resume/>
+    {/* <Resume/> */}
   </Layout>
 )
 

@@ -5,7 +5,7 @@ export const PostHeader = styled.header`
   color: var(--postColor);
   margin: auto;
   width: 100%;
-  padding: 5rem 5rem 0;
+  padding: 5rem 5rem 3rem;
   text-align: center;
   ${media.lessThan("large")`
     padding: 3rem 0 0;
@@ -15,7 +15,7 @@ export const PostHeader = styled.header`
 
 export const PostTitle = styled.h1`
   font-size: 2.75rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 1.4rem;
   margin: 1rem auto;
   ${media.lessThan("large")`
@@ -101,6 +101,7 @@ export const MainContent = styled.section`
   li {
     code {
       word-wrap: break-word;
+      padding: 0.25rem 0.65rem;
     }
   }
   img {
@@ -116,9 +117,12 @@ export const MainContent = styled.section`
   }
   blockquote {
     color: var(--postColor);
-    border-left: 0.3rem solid var(--highlight);
+    border-left: 0.3rem solid #b3b3b3;
     padding: 0 1.875rem;
     margin: 3.125rem auto;
+    ::first-letter {
+      color: #cc99cd; 
+    }
   }
   hr {
     border: 1px solid var(--borders);
@@ -146,6 +150,7 @@ export const MainContent = styled.section`
   }
   h2 {
     font-size: 1.5rem;
+    font-weight: 600;
     ${media.lessThan("large")`
       font-size: 1.275rem;
     `}
@@ -195,7 +200,7 @@ export const MainContent = styled.section`
     font-weight: 500;
     text-decoration: none;
     transition: opacity 0.5s;
-    padding: 4px 8px 4px 8px;
+    padding: 0.25rem 0.65rem;
     border-radius: 4px;
     svg {
       color: var(--postColor);

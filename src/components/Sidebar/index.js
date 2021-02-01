@@ -12,7 +12,7 @@ const Sidebar = () => (
   <S.SidebarWrapper>
     <S.Box>
       <Profile />
-      <MenuLinks />
+      {/* <MenuLinks /> commented until create the about page*/}
       <SocialLinks />
 
       {/* <S.BuiltWith>

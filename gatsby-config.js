@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Mario Rodeghiero`,
     position: "Front-End Developer",
-    description: `Hi, I'm Mario Rodeghiero. Front-End Developer focused on ReactJS working remotely at Datopian a US company and I dreaming of living abroad. Solving problems, creating beautiful and new things are my passion and I have been working on various open-sorce projects.`,
+    description: `Software Engineer Front-end focused on ReactJS, Redux, typescript, JavaScript, and CSS-IN-JS. Passionate about open-source and I believe in sharing knowledge is the best way to help the dev community.`,
     author: `@mariorodeghiero`,
     siteUrl: `https://mariorodeghiero.com`,
   },
@@ -71,7 +71,7 @@ module.exports = {
       resolve: `gatsby-plugin-algolia-search`,
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        apiKey: process.env.GATSBY_ALGOLIA_ADMIN_KEY,
         indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
         queries,
         chunkSize: 10000, // default: 1000

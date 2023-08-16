@@ -6,12 +6,12 @@ const links = [
     url: `https://github.com/${handle}`,
   },
   {
-    label: "Twitter",
-    url: `https://twitter.com/${handle}`,
+    label: "StackOverflow",
+    url: `https://stackoverflow.com/users/7550226/${handle}`,
   },
   {
     label: "Linkedin",
-    url: `https://www.linkedin.com/${handle}`,
+    url: `https://www.linkedin.com/in/${handle}`,
   },
 ]
 
